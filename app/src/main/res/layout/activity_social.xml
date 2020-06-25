@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".social"
+    android:orientation="vertical"
+    android:background="@drawable/bg">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar"
+        android:background="@color/colorPrimary">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Social Media"
+            android:textSize="20sp"
+            android:fontFamily="@font/lato_bold"
+            android:gravity="center"
+            android:textColor="@color/colorWhite"/>
+    </androidx.appcompat.widget.Toolbar>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="230dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/facebook"
+                android:layout_margin="2dp"
+                android:onClick="fb"
+                android:background="@drawable/bg"/>
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="230dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/youtube1"
+                android:layout_margin="2dp"
+                android:onClick="yt"
+                android:background="@drawable/bg"/>
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="230dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/gmail1"
+
+                android:onClick="em"
+                android:background="@drawable/bg"/>
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="230dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/website"
+                android:layout_margin="2dp"
+                android:onClick="wb"
+                android:background="@drawable/bg"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

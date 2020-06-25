@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".home"
+    android:background="@drawable/bg">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/bg"
+                android:scaleType="fitXY"
+                android:src="@drawable/course"
+                android:id="@+id/course"/>
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/bg"
+                android:scaleType="fitXY"
+                android:src="@drawable/online"
+                android:id="@+id/online"/>
+
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/bg"
+                android:scaleType="fitXY"
+                android:src="@drawable/vacancy"
+                android:id="@+id/job"/>
+
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/bg"
+                android:scaleType="fitXY"
+                android:src="@drawable/profile"
+                android:id="@+id/profile"/>
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/bg"
+                android:scaleType="fitXY"
+                android:src="@drawable/events"
+                android:id="@+id/events"/>
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/bg"
+                android:scaleType="fitXY"
+                android:src="@drawable/social"
+                android:id="@+id/social"/>
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/bg"
+                android:scaleType="fitXY"
+                android:src="@drawable/gallery"
+                android:id="@+id/gallery"/>
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/bg"
+                android:scaleType="fitXY"
+                android:src="@drawable/video"
+                android:id="@+id/video"/>
+
+
+
+        </LinearLayout>
+
+
+
+</ScrollView>
