@@ -6,6 +6,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -18,6 +19,7 @@ public class CourseDetail extends AppCompatActivity {
     ImageView image;
     CourseResponse userResponse;
     Button start;
+    ImageButton fb,wapp;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,7 +32,34 @@ public class CourseDetail extends AppCompatActivity {
         certification = findViewById(R.id.certification);
         responsive = findViewById(R.id.responsive);
         publisher = findViewById(R.id.publisher);
-
+        fb= findViewById(R.id.fb);
+        fb.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+//                ShareLinkContent linkContent = new ShareLinkContent.Builder().setQuote("").setContentUrl(Uri.parse("https://play.google.com/store/apps/details?id=com.kewo.huda")).build();
+//                if(ShareDialog.canShow(ShareLinkContent.class)){
+//                    shareDialog.show(linkContent);
+//                }
+                Intent sendIntent = new Intent();
+                sendIntent.setAction(Intent.ACTION_SEND);
+                sendIntent.putExtra(Intent.EXTRA_TEXT, "https://play.google.com/store/apps/details?id=com.kewo.huda");
+                sendIntent.setType("text/plain");
+                sendIntent.setPackage("com.facebook.katana");
+                startActivity(sendIntent);
+            }
+        });
+        wapp = findViewById(R.id.wapp);
+        wapp.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent sendIntent = new Intent();
+                sendIntent.setAction(Intent.ACTION_SEND);
+                sendIntent.putExtra(Intent.EXTRA_TEXT, "https://play.google.com/store/apps/details?id=com.kewo.huda");
+                sendIntent.setType("text/plain");
+                sendIntent.setPackage("com.whatsapp");
+                startActivity(sendIntent);
+            }
+        });
         cost = findViewById(R.id.cost);
         info = findViewById(R.id.info);
         start = findViewById(R.id.start);
@@ -40,6 +69,7 @@ public class CourseDetail extends AppCompatActivity {
         Intent intent = getIntent();
         if(intent.getExtras() != null){
             userResponse = (CourseResponse) intent.getSerializableExtra("data");
+
             String title_data = userResponse.getTitle();
             String desc_data = userResponse.getDescription();
             String img_data = userResponse.getUrl();
@@ -60,6 +90,10 @@ public class CourseDetail extends AppCompatActivity {
             certification.setText(cer_data);
             responsive.setText(res_data);
             publisher.setText(pub_data);
+            if(userResponse.getCategory().equals("safecon_safety") || userResponse.getCategory().equals("internship_e_filing")){
+                info.setText("");
+
+            }
 
             start.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -74,11 +108,15 @@ public class CourseDetail extends AppCompatActivity {
             info.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Intent i = new Intent(Intent.ACTION_VIEW, Uri.parse(info_data));
-                    startActivity(i);
+                    if(!userResponse.getCategory().equals("safecon_safety")){
+                        Intent i = new Intent(Intent.ACTION_VIEW, Uri.parse(info_data));
+                        startActivity(i);
+                    }
+
                 }
             });
 
         }
     }
+
 }

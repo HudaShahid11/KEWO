@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -13,6 +14,7 @@ TextView designation,company,dept,criteria, exp ,req,loc,shift,res,gender,age;
 TextView age_t,shift_t;
 JobResponse userResponse;
 Button apply;
+ImageButton fb,wapp;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,6 +32,34 @@ Button apply;
         gender = findViewById(R.id.gender);
         age = findViewById(R.id.age);
         shift_t = findViewById(R.id.shift_t);
+        fb= findViewById(R.id.fb);
+        fb.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+//                ShareLinkContent linkContent = new ShareLinkContent.Builder().setQuote("").setContentUrl(Uri.parse("https://play.google.com/store/apps/details?id=com.kewo.huda")).build();
+//                if(ShareDialog.canShow(ShareLinkContent.class)){
+//                    shareDialog.show(linkContent);
+//                }
+                Intent sendIntent = new Intent();
+                sendIntent.setAction(Intent.ACTION_SEND);
+                sendIntent.putExtra(Intent.EXTRA_TEXT, "https://play.google.com/store/apps/details?id=com.kewo.huda");
+                sendIntent.setType("text/plain");
+                sendIntent.setPackage("com.facebook.katana");
+                startActivity(sendIntent);
+            }
+        });
+        wapp = findViewById(R.id.wapp);
+        wapp.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent sendIntent = new Intent();
+                sendIntent.setAction(Intent.ACTION_SEND);
+                sendIntent.putExtra(Intent.EXTRA_TEXT, "https://play.google.com/store/apps/details?id=com.kewo.huda");
+                sendIntent.setType("text/plain");
+                sendIntent.setPackage("com.whatsapp");
+                startActivity(sendIntent);
+            }
+        });
         Intent intent = getIntent();
         if(intent.getExtras() != null){
             userResponse = (JobResponse) intent.getSerializableExtra("data");

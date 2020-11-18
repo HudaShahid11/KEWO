@@ -3,4 +3,24 @@
     <string name="forget_pw"><u><b>Forget Password</b></u></string>
     <string name="sign_in"><u><b>Sign In</b></u></string>
     <string name="base_url">http://kewo.org/app/kewo_app</string>
+    <string name="facebook_login_protocol_scheme">fb743415416485689</string>
+    <string name="facebook_app_id">743415416485689</string>
+    <string name="popup"><b><u>130</u></b> Certifications Are Available Here!!</string>
+    <string name="note">Membership Fees: <b>Rs. 5000/-</b></string>
+    <string name="step1"><b><u>Step 1:</u></b></string>
+    <string name="form">Fill out the form.</string>
+    <string name="uni">University</string>
+    <string name="org">Organization</string>
+    <string name="step2"><u>Step 2:</u></string>
+    <string name="text2">Deposit Rs. 5000/-</string>
+    <string name="step3"><u>Step 3:</u></string>
+    <string name="text3">Enter Voucher Number</string>
+    <string name="heading"><b><u>KEWO Membership</u></b></string>
+    <string name="rotract">In addition with KEWO, You may also get <b><u>Rotaract Membership.\n</u></b></string>
+    <string name="benfits"><b><u>Benefits</u></b></string>
+    <string name="b1"><b>Rotary Global Rewards</b>, our member benefits program, which offers discounts on products and services. It’s Rotary’s way of helping our members spend less so they can do more.\n</string>
+    <string name="b2">The <b>Rotary International Convention</b> is our biggest event of the year. Rotary members from more than 130 countries meet at the convention each year to celebrate our successes and make plans for the future.\n</string>
+    <string name="b3"><b>Rotary Fellowships</b> give members the chance to join a group of people who share similar interests, hobbies, or vocations. Some groups use their fellowship to make a positive difference.\n</string>
+    <string name="b4"><b>Rotarian Action Groups</b> unite Rotary members, family members, program participants and alumni who share their expertise in particular fields by collaborating with clubs and districts on projects.\n</string>
+
 </resources>

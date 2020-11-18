@@ -7,7 +7,7 @@ android {
         applicationId "com.kewo.huda"
         minSdkVersion 15
         targetSdkVersion 29
-        versionCode 14
+        versionCode 17
         versionName "1"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -45,6 +45,11 @@ dependencies {
     annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
     implementation 'com.squareup.picasso:picasso:2.71828'
     implementation 'androidx.preference:preference:1.1.1'
+
+    implementation 'com.facebook.android:facebook-share:5.15.3'
+    //noinspection GradleCompatible
+    implementation 'com.android.support:cardview-v7:26'
+    implementation 'me.biubiubiu.justifytext:library:1.1'
 
 
 }

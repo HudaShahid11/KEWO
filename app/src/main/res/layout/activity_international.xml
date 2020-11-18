@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.kewo.huda.international"
+    android:orientation="vertical"
+    android:background="@drawable/bg">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar"
+        android:background="@color/blue">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="International Certification Categories"
+            android:textSize="20sp"
+            android:fontFamily="@font/lato_bold"
+            android:gravity="center"
+            android:textColor="@color/white"/>
+    </androidx.appcompat.widget.Toolbar>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:gravity="center">
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/cisco1"
+                    android:scaleType="fitXY"
+
+                    android:layout_gravity="center"
+                    android:padding="5dp"/>
+
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Courses: 29"
+                android:textSize="15sp"
+                android:fontFamily="@font/lato_bold"
+                android:gravity="left"
+                android:textColor="@color/white"
+                android:padding="5dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white"/>
+            <GridLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:columnCount="3"
+                android:rowCount="5"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp">
+
+                <Button
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:text="Networking\n"
+                    android:fontFamily="@font/lato_bold"
+                    android:textSize="12dp"
+                    android:drawableTop="@drawable/ic_networking"
+                    android:background="@color/white"
+                    android:layout_margin="5dp"
+                    android:paddingTop="10dp"
+                    android:id="@+id/cisco_networking"/>
+                <Button
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:text="Infrastructure Automation"
+                    android:fontFamily="@font/lato_bold"
+                    android:textSize="12dp"
+                    android:drawableTop="@drawable/ic_infrastructure"
+                    android:background="@color/white"
+                    android:layout_margin="5dp"
+                    android:paddingTop="10dp"
+                    android:id="@+id/cisco_infrastructure_automation"/>
+                <Button
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:text="Security\n"
+                    android:fontFamily="@font/lato_bold"
+                    android:textSize="12dp"
+                    android:drawableTop="@drawable/ic_security"
+                    android:background="@color/white"
+                    android:layout_margin="5dp"
+                    android:paddingTop="10dp"
+                    android:id="@+id/cisco_security"/>
+                <Button
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:text="IOT and Data analytics"
+                    android:fontFamily="@font/lato_bold"
+                    android:textSize="12dp"
+                    android:drawableTop="@drawable/ic_iot"
+                    android:background="@color/white"
+                    android:layout_margin="5dp"
+                    android:paddingTop="10dp"
+                    android:id="@+id/cisco_iot_and_data_analytics"/>
+                <Button
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:text="OS and IT\n"
+                    android:fontFamily="@font/lato_bold"
+                    android:textSize="12dp"
+                    android:drawableTop="@drawable/ic_it"
+                    android:background="@color/white"
+                    android:layout_margin="5dp"
+                    android:paddingTop="10dp"
+                    android:id="@+id/cisco_os_and_it"/>
+                <Button
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:text="Programming\n"
+                    android:fontFamily="@font/lato_bold"
+                    android:textSize="12dp"
+                    android:drawableTop="@drawable/ic_programming"
+                    android:background="@color/white"
+                    android:layout_margin="5dp"
+                    android:paddingTop="10dp"
+                    android:id="@+id/cisco_programming"/>
+                <Button
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:text="Other Courses"
+                    android:fontFamily="@font/lato_bold"
+                    android:textSize="15dp"
+
+                    android:background="@color/white"
+                    android:layout_margin="5dp"
+                    android:paddingTop="10dp"
+                    android:id="@+id/cisco_others"/>
+            </GridLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white"
+                android:layout_marginTop="10dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:gravity="center">
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="120dp"
+                    android:src="@drawable/safecon"
+                    android:scaleType="fitXY"
+                    android:layout_gravity="center"
+                    android:padding="5dp"/>
+
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Courses: 11"
+                android:textSize="15sp"
+                android:fontFamily="@font/lato_bold"
+                android:gravity="left"
+                android:textColor="@color/white"
+                android:padding="5dp" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white"/>
+
+            <GridLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:columnCount="3"
+                android:rowCount="5"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp">
+
+
+                <Button
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:text="Safety\nCourses"
+                    android:fontFamily="@font/lato_bold"
+                    android:textSize="12dp"
+                    android:drawableTop="@drawable/ic_safatey"
+                    android:background="@color/white"
+                    android:layout_margin="5dp"
+                    android:paddingTop="10dp"
+                    android:id="@+id/safety" />
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+
+                    android:layout_margin="5dp"
+                    android:paddingTop="10dp"
+                    />
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+
+                    android:layout_margin="5dp"
+                    android:paddingTop="10dp"
+                   />
+
+
+            </GridLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

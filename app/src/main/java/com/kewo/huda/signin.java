@@ -28,10 +28,12 @@ public class signin extends AppCompatActivity implements View.OnClickListener{
     Url url = new Url();
     String link = url.getUrl();
     ProgressDialog dialog;
+    Session session;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signin);
+        session = new Session(getApplicationContext());
         username = findViewById(R.id.username);
         email = findViewById(R.id.email);
         password = findViewById(R.id.password);
@@ -115,14 +117,18 @@ public class signin extends AppCompatActivity implements View.OnClickListener{
                         }
                         //Displaying the output as a toast
 
-                        else if(output.equals("Registered")){
+                        else {
 
 
 
+                            session.setlogin(true);
+                            session.setphone("");
+                            session.setcnic("");
+                            session.setemail(email.getText().toString().trim());
+                            session.setid(output);
                             Intent intent;
-                            intent = new Intent(getBaseContext(),signup.class);
+                            intent = new Intent(getBaseContext(),home.class);
                             startActivity(intent);
-                            Toast.makeText(signin.this, output, Toast.LENGTH_LONG).show();
                             finish();
                         }
 

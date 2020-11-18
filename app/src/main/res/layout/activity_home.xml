@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".home"
+    tools:context="com.kewo.huda.home"
     android:background="@drawable/bg">
 
 
@@ -13,6 +13,14 @@
             android:gravity="center"
             android:orientation="vertical">
 
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/bg"
+                android:scaleType="fitXY"
+                android:src="@drawable/internship"
+                android:id="@+id/internship"/>
 
             <ImageButton
                 android:layout_width="match_parent"
@@ -28,8 +36,8 @@
                 android:layout_margin="10dp"
                 android:background="@drawable/bg"
                 android:scaleType="fitXY"
-                android:src="@drawable/online"
-                android:id="@+id/online"/>
+                android:src="@drawable/international"
+                android:id="@+id/international"/>
 
 
             <ImageButton
@@ -41,6 +49,15 @@
                 android:src="@drawable/vacancy"
                 android:id="@+id/job"/>
 
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/bg"
+                android:scaleType="fitXY"
+                android:src="@drawable/membership"
+                android:id="@+id/membership"/>
 
             <ImageButton
                 android:layout_width="match_parent"
@@ -83,6 +100,9 @@
                 android:scaleType="fitXY"
                 android:src="@drawable/video"
                 android:id="@+id/video"/>
+
+
+
 
 
 

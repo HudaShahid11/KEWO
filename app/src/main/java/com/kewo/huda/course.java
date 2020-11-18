@@ -8,7 +8,7 @@ import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class course extends AppCompatActivity {
-Button admin,cisco,finance,grooming,health,law,lang,mgt,marketing,standards,supply_chain,tech,vocational;
+Button admin,finance,grooming,health,law,lang,mgt,marketing,standards,supply_chain,tech,vocational;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,15 +22,15 @@ Button admin,cisco,finance,grooming,health,law,lang,mgt,marketing,standards,supp
                 startActivity(i);
             }
         });
-        cisco = findViewById(R.id.cisco);
-        cisco.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent i = new Intent(getBaseContext(),CourseActivity.class);
-                i.putExtra("category",cisco.getText());
-                startActivity(i);
-            }
-        });
+//        cisco = findViewById(R.id.cisco);
+//        cisco.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent i = new Intent(getBaseContext(),CourseActivity.class);
+//                i.putExtra("category",cisco.getText());
+//                startActivity(i);
+//            }
+//        });
         finance = findViewById(R.id.finance);
         finance.setOnClickListener(new View.OnClickListener() {
             @Override

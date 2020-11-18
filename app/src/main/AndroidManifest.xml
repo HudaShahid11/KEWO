@@ -9,17 +9,30 @@
     <application
         android:allowBackup="true"
         android:debuggable="false"
+        android:hardwareAccelerated="false"
         android:icon="@mipmap/ic_launcher"
         android:label="KEWO"
+        android:largeHeap="true"
         android:networkSecurityConfig="@xml/network_security_config"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true"
         tools:ignore="HardcodedDebugMode">
+        <activity android:name=".internship"></activity>
+        <activity android:name=".member_bank_detail" />
+        <activity android:name=".membership_about" />
+        <activity android:name=".membership_form" />
+        <activity android:name=".membership" />
+        <activity android:name=".international" />
 
-        <activity android:name=".online"></activity>
-        <activity android:name=".comingsoon"/>
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity android:name=".fb" />
+        <activity android:name=".online" />
+        <activity android:name=".comingsoon" />
         <activity android:name=".social" />
         <activity android:name=".guest" />
         <activity android:name=".profile" />
@@ -30,8 +43,6 @@
         <activity android:name=".CourseForm" />
         <activity android:name=".CourseDetail" />
         <activity android:name=".CourseActivity" />
-
-
         <activity android:name=".gallery" />
         <activity android:name=".category" />
         <activity android:name=".course" />
@@ -46,10 +57,14 @@
             </intent-filter>
         </activity>
 
-
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
+
+        <provider
+            android:name="com.facebook.FacebookContentProvider"
+            android:authorities="com.facebook.app.FacebookContentProvider743415416485689"
+            android:exported="true" />
     </application>
 
 </manifest>

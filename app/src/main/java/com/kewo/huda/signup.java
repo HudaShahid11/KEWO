@@ -6,11 +6,14 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.facebook.share.widget.ShareDialog;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -29,6 +32,8 @@ public class signup extends AppCompatActivity implements View.OnClickListener{
     Url url = new Url();
     String link = url.getUrl();;
     ProgressDialog dialog;
+    ImageButton fb,wapp;
+    ShareDialog shareDialog;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,6 +41,35 @@ public class signup extends AppCompatActivity implements View.OnClickListener{
         signin = findViewById(R.id.signin);
         session = new Session(getApplicationContext());
         dialog = new ProgressDialog(this);
+        shareDialog = new ShareDialog(this);
+        fb= findViewById(R.id.fb);
+        fb.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+//                ShareLinkContent linkContent = new ShareLinkContent.Builder().setQuote("").setContentUrl(Uri.parse("https://play.google.com/store/apps/details?id=com.kewo.huda")).build();
+//                if(ShareDialog.canShow(ShareLinkContent.class)){
+//                    shareDialog.show(linkContent);
+//                }
+                Intent sendIntent = new Intent();
+                sendIntent.setAction(Intent.ACTION_SEND);
+                sendIntent.putExtra(Intent.EXTRA_TEXT, "https://play.google.com/store/apps/details?id=com.kewo.huda");
+                sendIntent.setType("text/plain");
+                sendIntent.setPackage("com.facebook.katana");
+                startActivity(sendIntent);
+            }
+        });
+        wapp = findViewById(R.id.wapp);
+        wapp.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent sendIntent = new Intent();
+                sendIntent.setAction(Intent.ACTION_SEND);
+                sendIntent.putExtra(Intent.EXTRA_TEXT, "https://play.google.com/store/apps/details?id=com.kewo.huda");
+                sendIntent.setType("text/plain");
+                sendIntent.setPackage("com.whatsapp");
+                startActivity(sendIntent);
+            }
+        });
 
         signin.setOnClickListener(new View.OnClickListener() {
             @Override

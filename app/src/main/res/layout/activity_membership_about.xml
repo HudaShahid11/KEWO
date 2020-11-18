@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.kewo.huda.membership_about"
+    android:orientation="vertical"
+    android:background="@drawable/bg">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar"
+        android:background="@color/colorPrimary">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Membership"
+            android:textSize="20sp"
+            android:fontFamily="@font/lato_bold"
+            android:gravity="center"
+            android:textColor="@color/colorWhite"/>
+    </androidx.appcompat.widget.Toolbar>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/heading"
+                android:textSize="20sp"
+                android:fontFamily="@font/lato_bold"
+                android:gravity="center"
+                android:textColor="@color/colorWhite"
+                android:layout_marginTop="20dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/rotract"
+                android:textSize="18sp"
+                android:fontFamily="@font/lato_bold"
+
+                android:textColor="@color/colorWhite"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:gravity="center">
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/kewo_without_bg"
+                    android:scaleType="fitXY"
+                    android:padding="18dp"/>
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/rotary"
+                    android:scaleType="fitXY"/>
+
+            </LinearLayout>
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Rotary believes in developing the next generation of leaders. Our programs help younger leaders build leadership skills, expand education and learn the value of service.\n"
+                android:textSize="18sp"
+                android:fontFamily="@font/lato"
+
+                android:textColor="@color/colorWhite"
+                android:layout_marginLeft="20dp" />
+            <Button
+
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="60dp"
+                android:text="Explore It"
+                android:textColor="@color/white"
+                android:background="@drawable/button"
+                android:fontFamily="@font/lato"
+                android:textSize="18sp"
+                android:id="@+id/explore"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/benfits"
+                android:textSize="18sp"
+                android:fontFamily="@font/lato_bold"
+                android:gravity="center"
+                android:textColor="@color/colorWhite"
+                android:layout_margin="10dp" />
+
+
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:text="1."
+                android:textColor="@color/white"
+                android:layout_marginLeft="20dp"
+                android:textSize="18sp"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Get Free Webinars and Seminars.\n"
+                android:textSize="18sp"
+                android:fontFamily="@font/lato"
+
+                android:textColor="@color/colorWhite"
+
+                android:layout_marginLeft="10dp" />
+        </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:text="2."
+                    android:textColor="@color/white"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="18sp"/>
+                <me.biubiubiu.justifytext.library.JustifyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Get Scholarship.\n"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/lato"
+
+                    android:textColor="@color/colorWhite"
+
+                    android:layout_marginLeft="10dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:text="3."
+                    android:textColor="@color/white"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="18sp"/>
+                <me.biubiubiu.justifytext.library.JustifyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Get financial recourse for your amazing project.\n"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/lato"
+
+                    android:textColor="@color/colorWhite"
+
+                    android:layout_marginLeft="10dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:text="4."
+                    android:textColor="@color/white"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="18sp"/>
+                <me.biubiubiu.justifytext.library.JustifyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Get chance to attend Rotary International Conventions.\n"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/lato"
+
+                    android:textColor="@color/colorWhite"
+
+                    android:layout_marginLeft="10dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:text="5."
+                    android:textColor="@color/white"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="18sp"/>
+                <me.biubiubiu.justifytext.library.JustifyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Get 3 months internship in abroad.\n"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/lato"
+
+                    android:textColor="@color/colorWhite"
+
+                    android:layout_marginLeft="10dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:text="6."
+                    android:textColor="@color/white"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="18sp"/>
+                <me.biubiubiu.justifytext.library.JustifyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Get One Year Youth Exchange Program.\n"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/lato"
+
+                    android:textColor="@color/colorWhite"
+
+                    android:layout_marginLeft="10dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:text="7."
+                    android:textColor="@color/white"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="18sp"/>
+                <me.biubiubiu.justifytext.library.JustifyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Get help in figuring out what you want to major in.\n"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/lato"
+
+                    android:textColor="@color/colorWhite"
+
+                    android:layout_marginLeft="10dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:text="8."
+                    android:textColor="@color/white"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="18sp"/>
+                <me.biubiubiu.justifytext.library.JustifyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Get help in development of some critical problem solving skills.\n"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/lato"
+
+                    android:textColor="@color/colorWhite"
+
+                    android:layout_marginLeft="10dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:text="9."
+                    android:textColor="@color/white"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="18sp"/>
+                <me.biubiubiu.justifytext.library.JustifyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Get fellowship to study at a Rotary Peace Center.\n"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/lato"
+
+                    android:textColor="@color/colorWhite"
+
+                    android:layout_marginLeft="10dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:text="10."
+                    android:textColor="@color/white"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="18sp"/>
+                <me.biubiubiu.justifytext.library.JustifyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Get a chance to go broad together with friends for four to six weeks.\n"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/lato"
+
+                    android:textColor="@color/colorWhite"
+
+                    android:layout_marginLeft="10dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
