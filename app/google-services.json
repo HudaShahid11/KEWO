@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "299384932348",
+    "project_id": "huda-ab88b",
+    "storage_bucket": "huda-ab88b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:299384932348:android:7286d4f805a7f00e301479",
+        "android_client_info": {
+          "package_name": "com.kewo.huda"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "299384932348-i7nvmgu6ks33n59tpop7osa6dtflgve3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.kewo.huda",
+            "certificate_hash": "2e10f9673bcf2f1273e14d02a8ce566892166798"
+          }
+        },
+        {
+          "client_id": "299384932348-2f47eufp0bjqi1bg4b04i0ol9bbrtrvh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD3L2_ybVsl92vPC7oOxXHxprwFzejJ7RE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "299384932348-2f47eufp0bjqi1bg4b04i0ol9bbrtrvh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
