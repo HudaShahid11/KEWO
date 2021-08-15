@@ -5,6 +5,6 @@ public class Url {
         return url;
     }
 
-    String url = "http://kewo.org/app/kewo_app/";
-
+   String url = "http://kewo.org/app/kewo_app/";
+   //String url = "http://192.168.56.1/kewo_app/";
 }

@@ -30,7 +30,7 @@ public class signup extends AppCompatActivity implements View.OnClickListener{
     Session session;
     private EditText email , password;
     Url url = new Url();
-    String link = url.getUrl();;
+    String link = url.getUrl();
     ProgressDialog dialog;
     ImageButton fb,wapp;
     ShareDialog shareDialog;

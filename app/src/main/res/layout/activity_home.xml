@@ -12,15 +12,26 @@
             android:layout_height="match_parent"
             android:gravity="center"
             android:orientation="vertical">
-
+            <TextView
+                android:id="@+id/first"
+                android:textColor="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                android:text="Total Registration"
+                android:fontFamily="@font/lato_bold"
+                android:gravity="center"
+                android:layout_margin="10dp"/>
             <ImageButton
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
                 android:layout_margin="10dp"
                 android:background="@drawable/bg"
                 android:scaleType="fitXY"
-                android:src="@drawable/internship"
-                android:id="@+id/internship"/>
+                android:src="@drawable/workshop"
+                android:id="@+id/workshop"/>
+
 
             <ImageButton
                 android:layout_width="match_parent"
@@ -30,6 +41,7 @@
                 android:scaleType="fitXY"
                 android:src="@drawable/course"
                 android:id="@+id/course"/>
+
             <ImageButton
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
@@ -49,24 +61,24 @@
                 android:src="@drawable/vacancy"
                 android:id="@+id/job"/>
 
-
             <ImageButton
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
                 android:layout_margin="10dp"
                 android:background="@drawable/bg"
                 android:scaleType="fitXY"
-                android:src="@drawable/membership"
-                android:id="@+id/membership"/>
+                android:src="@drawable/internship"
+                android:id="@+id/internship"/>
 
-            <ImageButton
-                android:layout_width="match_parent"
-                android:layout_height="150dp"
-                android:layout_margin="10dp"
-                android:background="@drawable/bg"
-                android:scaleType="fitXY"
-                android:src="@drawable/profile"
-                android:id="@+id/profile"/>
+
+<!--            <ImageButton-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="150dp"-->
+<!--                android:layout_margin="10dp"-->
+<!--                android:background="@drawable/bg"-->
+<!--                android:scaleType="fitXY"-->
+<!--                android:src="@drawable/profile"-->
+<!--                android:id="@+id/profile"/>-->
             <ImageButton
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
@@ -75,6 +87,14 @@
                 android:scaleType="fitXY"
                 android:src="@drawable/events"
                 android:id="@+id/events"/>
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/bg"
+                android:scaleType="fitXY"
+                android:src="@drawable/membership"
+                android:id="@+id/membership"/>
             <ImageButton
                 android:layout_width="match_parent"
                 android:layout_height="150dp"

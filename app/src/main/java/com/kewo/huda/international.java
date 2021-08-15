@@ -14,15 +14,15 @@ Button pgd, safety,cisco_networking, cisco_infrastructure_automation, cisco_secu
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_international);
 
-        safety = findViewById(R.id.safety);
-        safety.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent i = new Intent(getBaseContext(), CourseActivity.class);
-                i.putExtra("category","safecon_safety");
-                startActivity(i);
-            }
-        });
+//        safety = findViewById(R.id.safety);
+//        safety.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent i = new Intent(getBaseContext(), CourseActivity.class);
+//                i.putExtra("category","safecon_safety");
+//                startActivity(i);
+//            }
+//        });
         cisco_networking = findViewById(R.id.cisco_networking);
         cisco_networking.setOnClickListener(new View.OnClickListener() {
             @Override

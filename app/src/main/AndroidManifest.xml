@@ -19,7 +19,8 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true"
         tools:ignore="HardcodedDebugMode">
-        <activity android:name=".internship"></activity>
+        <activity android:name=".workshop"></activity>
+        <activity android:name=".internship" />
         <activity android:name=".member_bank_detail" />
         <activity android:name=".membership_about" />
         <activity android:name=".membership_form" />

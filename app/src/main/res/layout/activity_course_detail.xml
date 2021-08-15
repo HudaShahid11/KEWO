@@ -16,7 +16,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Course Detail"
+            android:text="Detail"
             android:textSize="20sp"
             android:fontFamily="@font/lato_bold"
             android:gravity="center"
@@ -205,7 +205,7 @@
                 android:layout_marginTop="15dp"
                 android:layout_marginLeft="60dp"
                 android:layout_marginRight="60dp"
-                android:text="Start Course"
+                android:text="Register Now"
                 android:textColor="@color/white"
                 android:background="@drawable/button"
                 android:textStyle="bold"
@@ -220,7 +220,8 @@
                 android:fontFamily="@font/lato_bold"
                 android:textAlignment="center"
                 android:layout_marginTop="10dp"
-                android:textColor="@color/blue" />
+                android:textColor="@color/blue"
+                android:gravity="center_horizontal" />
 
             <LinearLayout
                 android:layout_width="match_parent"

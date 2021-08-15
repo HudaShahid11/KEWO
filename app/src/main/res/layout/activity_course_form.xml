@@ -17,7 +17,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Register"
+            android:text="Form"
             android:textSize="20sp"
             android:fontFamily="@font/lato_bold"
             android:gravity="center"
@@ -58,7 +58,7 @@
                 <TextView
                     android:layout_width="125dp"
                     android:layout_height="wrap_content"
-                    android:text="Name:"
+                    android:text="First Name:"
                     android:textSize="20sp"
                     android:fontFamily="@font/lato_bold"
                     android:layout_marginRight="5dp"/>
@@ -68,9 +68,53 @@
                     android:text=""
                     android:textSize="20sp"
                     android:fontFamily="@font/lato"
-                    android:id="@+id/name"
+                    android:id="@+id/fname"
                     android:inputType="textPersonName"
-                    android:hint="Enter name"/>
+                    android:hint="Your first name"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+                <TextView
+                    android:layout_width="125dp"
+                    android:layout_height="wrap_content"
+                    android:text="Last Name:"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/lato_bold"
+                    android:layout_marginRight="5dp"/>
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="20sp"
+                    android:fontFamily="@font/lato"
+                    android:id="@+id/lname"
+                    android:inputType="textPersonName"
+                    android:hint="Your last name"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+                <TextView
+                    android:layout_width="125dp"
+                    android:layout_height="wrap_content"
+                    android:text="Father Name:"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/lato_bold"
+                    android:layout_marginRight="5dp"/>
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="20sp"
+                    android:fontFamily="@font/lato"
+                    android:id="@+id/father_name"
+                    android:inputType="textPersonName"
+                    android:hint="Your father name"/>
 
             </LinearLayout>
             <LinearLayout
@@ -90,7 +134,7 @@
                     android:text=""
                     android:textSize="20sp"
                     android:fontFamily="@font/lato"
-                    android:id="@+id/email"
+                    android:id="@+id/email_address"
                     android:inputType="textEmailAddress"
                     android:hint="Enter email address"/>
 
@@ -102,7 +146,7 @@
                 <TextView
                     android:layout_width="125dp"
                     android:layout_height="wrap_content"
-                    android:text="Cnic:"
+                    android:text="Contact No.1:"
                     android:textSize="20sp"
                     android:fontFamily="@font/lato_bold"
                     android:layout_marginRight="5dp"/>
@@ -112,9 +156,9 @@
                     android:text=""
                     android:textSize="20sp"
                     android:fontFamily="@font/lato"
-                    android:id="@+id/cnic"
-                    android:inputType="number"
-                    android:hint="Enter cnic number" />
+                    android:id="@+id/contact_number_1"
+                    android:inputType="phone"
+                    android:hint="Enter phone number" />
 
             </LinearLayout>
             <LinearLayout
@@ -124,7 +168,7 @@
                 <TextView
                     android:layout_width="125dp"
                     android:layout_height="wrap_content"
-                    android:text="Phone no:"
+                    android:text="Contact No.2:"
                     android:textSize="20sp"
                     android:fontFamily="@font/lato_bold"
                     android:layout_marginRight="5dp"/>
@@ -134,9 +178,190 @@
                     android:text=""
                     android:textSize="20sp"
                     android:fontFamily="@font/lato"
-                    android:id="@+id/phone"
+                    android:id="@+id/contact_number_2"
                     android:inputType="phone"
                     android:hint="Enter phone number" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+                <TextView
+                    android:layout_width="125dp"
+                    android:layout_height="wrap_content"
+                    android:text="Date of birth:"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/lato_bold"
+                    android:layout_marginRight="5dp"/>
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="20sp"
+                    android:fontFamily="@font/lato"
+                    android:id="@+id/date_of_birth"
+                    android:inputType="date"
+                    android:hint="mm/dd/yyyy" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+                <TextView
+                    android:layout_width="125dp"
+                    android:layout_height="wrap_content"
+                    android:text="Age:"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/lato_bold"
+                    android:layout_marginRight="5dp"/>
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="20sp"
+                    android:fontFamily="@font/lato"
+                    android:id="@+id/age"
+                    android:inputType="number"
+                    android:hint="Enter phone number" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+                <TextView
+                    android:layout_width="125dp"
+                    android:layout_height="wrap_content"
+                    android:text="Gender:"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/lato_bold"
+                    android:layout_marginRight="5dp"/>
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radio_group">
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Male"
+                        android:textSize="20sp"
+                        android:fontFamily="@font/lato"
+                        android:id="@+id/male"/>
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Female"
+                        android:textSize="20sp"
+                        android:fontFamily="@font/lato"
+                        android:id="@+id/female"/>
+
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+                <TextView
+                    android:layout_width="125dp"
+                    android:layout_height="wrap_content"
+                    android:text="Cnic/B-Form:"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/lato_bold"
+                    android:layout_marginRight="5dp"/>
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="20sp"
+                    android:fontFamily="@font/lato"
+                    android:id="@+id/cnic_b_form"
+                    android:inputType="number"
+                    android:hint="Enter number" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+
+                <TextView
+                    android:layout_width="125dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:fontFamily="@font/lato_bold"
+                    android:text="Street Youth:"
+                    android:textSize="20sp" />
+
+                <RadioGroup
+                    android:id="@+id/radio_group3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/yes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/lato"
+                        android:text="Yes"
+                        android:textSize="20sp" />
+
+                    <RadioButton
+                        android:id="@+id/no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/lato"
+                        android:text="No"
+                        android:textSize="20sp" />
+
+
+                </RadioGroup>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+
+                <TextView
+                    android:layout_width="125dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:fontFamily="@font/lato_bold"
+                    android:text="District:"
+                    android:textSize="20sp" />
+
+                <Spinner
+                    android:id="@+id/spinner"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/lato" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+                <TextView
+                    android:layout_width="125dp"
+                    android:layout_height="wrap_content"
+                    android:text="Address:"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/lato_bold"
+                    android:layout_marginRight="5dp"/>
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="20sp"
+                    android:fontFamily="@font/lato"
+                    android:id="@+id/address"
+                    android:inputType="text"
+                    android:hint="Enter address" />
 
             </LinearLayout>
 
@@ -165,12 +390,11 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:orientation="vertical">
+                android:layout_margin="10dp">
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="125dp"
                     android:layout_height="wrap_content"
-                    android:text="Why do you want to join this course?"
+                    android:text="Skills:"
                     android:textSize="20sp"
                     android:fontFamily="@font/lato_bold"
                     android:layout_marginRight="5dp"/>
@@ -180,9 +404,79 @@
                     android:text=""
                     android:textSize="20sp"
                     android:fontFamily="@font/lato"
-                    android:id="@+id/reason"
-                    android:inputType="number"
-                    android:hint="Enter reason for joining this course." />
+                    android:id="@+id/skills"
+                    android:inputType="text"
+                    android:hint="Mention Skills" />
+
+            </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp">
+                    <TextView
+                        android:layout_width="125dp"
+                        android:layout_height="wrap_content"
+                        android:text="Program:"
+                        android:textSize="20sp"
+                        android:fontFamily="@font/lato_bold"
+                        android:layout_marginRight="5dp"/>
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/radio_group2">
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Weekdays"
+                            android:textSize="20sp"
+                            android:fontFamily="@font/lato"
+                            android:id="@+id/weekday"/>
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Weekend"
+                            android:textSize="20sp"
+                            android:fontFamily="@font/lato"
+                            android:id="@+id/weekend"/>
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Any"
+                            android:textSize="20sp"
+                            android:fontFamily="@font/lato"
+                            android:id="@+id/any"/>
+
+                    </RadioGroup>
+
+                </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+                <TextView
+                    android:layout_width="125dp"
+                    android:layout_height="wrap_content"
+                    android:text="Referred By:"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/lato_bold"
+                    android:layout_marginRight="5dp"/>
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="20sp"
+                    android:fontFamily="@font/lato"
+                    android:id="@+id/referred_by"
+                    android:inputType="text"
+                    android:hint="Write it" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
                 <Button
 
 
